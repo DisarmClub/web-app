@@ -20,6 +20,7 @@ const styles: Styles = {
     ...theme.styles.global,
     html: {
       height: '-webkit-fill-available',
+      overscrollBehavior: 'none',
     },
   },
 }

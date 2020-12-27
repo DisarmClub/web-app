@@ -5,10 +5,29 @@ import type {AppProps} from 'next/app'
 import {
   Box,
   ChakraProvider,
+  GlobalStyle,
   usePrefersReducedMotion,
   useTheme,
 } from '@chakra-ui/react'
 import {motion} from 'framer-motion'
+
+import theme, {Theme} from '@chakra-ui/theme'
+import {mode, Styles} from '@chakra-ui/theme-tools'
+
+const styles: Styles = {
+  ...theme.styles,
+  global: {
+    ...theme.styles.global,
+    html: {
+      height: '-webkit-fill-available',
+    },
+  },
+}
+
+const customTheme: Theme = {
+  ...theme,
+  styles,
+}
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
@@ -20,7 +39,8 @@ function MyApp({Component, pageProps}: AppProps) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
       </Head>
-      <ChakraProvider>
+      <ChakraProvider theme={customTheme}>
+        <GlobalStyle />
         <Background />
         <Component {...pageProps} />
       </ChakraProvider>
@@ -38,7 +58,8 @@ function Background() {
       overflow="hidden"
       zIndex={-1}
       width="100vw"
-      height="100vh"
+      minHeight="100vh"
+      style={{minHeight: '-webkit-fill-available'}}
       background={`linear-gradient(to bottom, ${colors.red['700']}, ${colors.yellow['400']})`}
     >
       {isReducedMotion ? (

@@ -3,7 +3,11 @@ import {Button, Center, Flex, Heading, useTheme} from '@chakra-ui/react'
 export default function Home() {
   const {sizes} = useTheme()
   return (
-    <Center height="100vh" width="100vw">
+    <Center
+      minHeight="100vh"
+      style={{minHeight: '-webkit-fill-available'}}
+      width="100vw"
+    >
       <Flex
         backgroundColor="black"
         width="xl"

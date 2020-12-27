@@ -18,9 +18,11 @@ const styles: Styles = {
   ...theme.styles,
   global: {
     ...theme.styles.global,
-    html: {
+    'html, body': {
       height: '-webkit-fill-available',
       overscrollBehavior: 'none',
+      position: 'fixed',
+      overflow: 'hidden',
     },
   },
 }

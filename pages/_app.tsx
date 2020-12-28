@@ -32,34 +32,37 @@ const customTheme: Theme = {
   styles,
 }
 
-function MyApp({Component, pageProps}: AppProps) {
+function App({Component, pageProps}: AppProps) {
   const {colors} = useTheme()
 
   return (
-    <>
-      <Head>
-        <script
-          data-ad-client="ca-pub-5673854016198249"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-        <meta name="theme-color" content={colors.red['700']} />
-        <meta
-          name="msapplication-navbutton-color"
-          content={colors.red['700']}
-        />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content={colors.red['700']}
-        />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-      </Head>
-      <ChakraProvider theme={customTheme}>
-        <GlobalStyle />
-        <Background />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </>
+    <ChakraProvider theme={customTheme}>
+      <GlobalStyle />
+      <AppHead />
+      <Background />
+      <Component {...pageProps} />
+    </ChakraProvider>
+  )
+}
+
+function AppHead() {
+  const {colors} = useTheme()
+
+  return (
+    <Head>
+      <script
+        data-ad-client="ca-pub-5673854016198249"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <meta name="theme-color" content={colors.red['700']} />
+      <meta name="msapplication-navbutton-color" content={colors.red['700']} />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content={colors.red['700']}
+      />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+    </Head>
   )
 }
 
@@ -134,4 +137,4 @@ function BokehDot() {
   )
 }
 
-export default MyApp
+export default App

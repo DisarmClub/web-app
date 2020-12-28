@@ -1,6 +1,8 @@
 import React from 'react'
 
 import type {AppProps} from 'next/app'
+import Head from 'next/head'
+
 import {
   Box,
   ChakraProvider,
@@ -11,7 +13,7 @@ import {
 import {motion} from 'framer-motion'
 
 import theme, {Theme} from '@chakra-ui/theme'
-import {mode, Styles} from '@chakra-ui/theme-tools'
+import {Styles} from '@chakra-ui/theme-tools'
 
 const styles: Styles = {
   ...theme.styles,
@@ -23,6 +25,9 @@ const styles: Styles = {
       position: 'fixed',
       overflow: 'hidden',
     },
+    '#__next': {
+      height: '-webkit-fill-available',
+    },
   },
 }
 
@@ -32,10 +37,14 @@ const customTheme: Theme = {
 }
 
 function App({Component, pageProps}: AppProps) {
-  const {colors} = useTheme()
-
   return (
     <ChakraProvider theme={customTheme}>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+      </Head>
       <GlobalStyle />
       <Background />
       <Component {...pageProps} />

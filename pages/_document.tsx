@@ -20,11 +20,6 @@ class AppDocument extends Document {
 
           <meta name="msapplication-navbutton-color" content="#000000" />
 
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
-          />
-
           <link rel="manifest" href="/manifest.json" />
           <script
             data-ad-client="ca-pub-5673854016198249"

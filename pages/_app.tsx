@@ -52,6 +52,7 @@ function MyApp({Component, pageProps}: AppProps) {
           name="apple-mobile-web-app-status-bar-style"
           content={colors.red['700']}
         />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
       <ChakraProvider theme={customTheme}>
         <GlobalStyle />

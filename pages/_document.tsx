@@ -21,6 +21,7 @@ class AppDocument extends Document {
           <meta name="msapplication-navbutton-color" content="#000000" />
 
           <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/Logo192.png" />
           <script
             data-ad-client="ca-pub-5673854016198249"
             async

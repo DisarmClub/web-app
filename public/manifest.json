@@ -5,5 +5,25 @@
   "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/"
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/Logo.svg",
+      "sizes": "72x72 96x96 144x144 168x168 192x192 256x256 512x512",
+      "purpose": "maskable any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/Logo512.png",
+      "sizes": "512x512",
+      "purpose": "maskable any",
+      "type": "image/png"
+    },
+    {
+      "src": "/Logo192.png",
+      "sizes": "512x192",
+      "purpose": "maskable any",
+      "type": "image/png"
+    }
+  ]
 }

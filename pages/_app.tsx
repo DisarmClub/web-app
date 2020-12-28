@@ -33,6 +33,8 @@ const customTheme: Theme = {
 }
 
 function MyApp({Component, pageProps}: AppProps) {
+  const {colors} = useTheme()
+
   return (
     <>
       <Head>
@@ -41,6 +43,15 @@ function MyApp({Component, pageProps}: AppProps) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <meta name="theme-color" content={colors.red['700']} />
+        <meta
+          name="msapplication-navbutton-color"
+          content={colors.red['700']}
+        />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content={colors.red['700']}
+        />
       </Head>
       <ChakraProvider theme={customTheme}>
         <GlobalStyle />

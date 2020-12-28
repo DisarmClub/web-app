@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import React from 'react'
 
 import type {AppProps} from 'next/app'
@@ -38,36 +37,9 @@ function App({Component, pageProps}: AppProps) {
   return (
     <ChakraProvider theme={customTheme}>
       <GlobalStyle />
-      <AppHead />
       <Background />
       <Component {...pageProps} />
     </ChakraProvider>
-  )
-}
-
-function AppHead() {
-  const {colors} = useTheme()
-
-  return (
-    <Head>
-      <script
-        data-ad-client="ca-pub-5673854016198249"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
-      <meta name="mobile-wep-app-capable" content="yes"></meta>
-      <meta name="theme-color" content={colors.red['700']} />
-
-      <meta name="msapplication-navbutton-color" content={colors.red['700']} />
-
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
-      ></meta>
-    </Head>
   )
 }
 

@@ -1,40 +1,32 @@
-import {Button, Center, Flex, Heading, useTheme} from '@chakra-ui/react'
+import React from 'react'
+import Link from 'next/link'
+import {Box, Button, Flex, Heading} from '@chakra-ui/react'
+import {PageLayout} from '../components/PageLayout'
 
 export default function Home() {
-  const {sizes} = useTheme()
   return (
-    <Center
-      minHeight="100vh"
-      style={{minHeight: '-webkit-fill-available'}}
-      width="100vw"
-    >
-      <Flex
-        backgroundColor="black"
-        width="xl"
-        direction="column"
-        maxHeight="xl"
-        borderColor="white"
-        borderWidth={sizes[1]}
-        padding="8"
+    <PageLayout>
+      <Heading
+        as="h1"
+        marginTop="24"
+        letterSpacing="tighter"
+        lineHeight="none"
+        textTransform="uppercase"
+        size="4xl"
+        textAlign="center"
+        color="white"
+        fontFamily="sans-serif"
       >
-        <Heading
-          as="h1"
-          marginTop="4"
-          letterSpacing="tighter"
-          lineHeight="none"
-          textTransform="uppercase"
-          size="4xl"
-          textAlign="center"
-          color="white"
-          fontFamily="sans-serif"
-        >
-          Disarm Club
-        </Heading>
-        <Flex marginTop="8" justifyContent="space-around">
+        Disarm Club
+      </Heading>
+      <Flex marginTop="8" padding="8" justifyContent="space-around">
+        <Link href="/lobby/join">
           <Button>Join Game</Button>
+        </Link>
+        <Link href="/lobby/new">
           <Button>New Game</Button>
-        </Flex>
+        </Link>
       </Flex>
-    </Center>
+    </PageLayout>
   )
 }

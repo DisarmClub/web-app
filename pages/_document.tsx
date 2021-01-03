@@ -23,6 +23,8 @@ class AppDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/Logo192.png" />
 
+          <link rel="icon" href="/favicon.ico" sizes="32x32" />
+
           <script
             data-ad-client="ca-pub-5673854016198249"
             async

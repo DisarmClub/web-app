@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, useTheme} from '@chakra-ui/react'
 
-import {BokehDot} from './BokehDot'
+import {MemoizedBokehDot as BokehDot} from './BokehDot'
 import {useMotionStateContext} from '../context/MotionStateContext'
 
 export function Background() {

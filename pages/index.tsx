@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {Box, Button, Flex, Heading} from '@chakra-ui/react'
+import {Button, Flex, Heading} from '@chakra-ui/react'
 import {PageLayout} from '../components/PageLayout'
 
 export default function Home() {

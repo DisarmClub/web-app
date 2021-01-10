@@ -45,3 +45,5 @@ export function BokehDot() {
     />
   )
 }
+
+export const MemoizedBokehDot = React.memo(BokehDot)

@@ -8,7 +8,7 @@ class AppDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en-US">
         <Head>
           <meta name="application-name" content="DisarmClub" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,6 +30,7 @@ class AppDocument extends Document {
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           />
+          <title>Disarm Club - Disarm together</title>
         </Head>
         <body>
           <Main />

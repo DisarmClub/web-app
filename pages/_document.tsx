@@ -10,6 +10,8 @@ class AppDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
+          <title>Disarm Club - Disarm together</title>
+          <meta name="description">A multiplayer disarm game</meta>
           <meta name="application-name" content="DisarmClub" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -30,7 +32,6 @@ class AppDocument extends Document {
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           /> */}
-          <title>Disarm Club - Disarm together</title>
         </Head>
         <body>
           <Main />

@@ -11,7 +11,7 @@ class AppDocument extends Document {
       <Html lang="en-US">
         <Head>
           <title>Disarm Club - Disarm together</title>
-          <meta name="description">A multiplayer disarm game</meta>
+          <meta name="description" content="A multiplayer disarming game" />
           <meta name="application-name" content="DisarmClub" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -27,15 +27,16 @@ class AppDocument extends Document {
 
           <link rel="icon" href="/favicon.ico" sizes="32x32" />
 
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+          />
+
           {/* <script
             data-ad-client="ca-pub-5673854016198249"
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           /> */}
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-          />
         </Head>
         <body>
           <Main />

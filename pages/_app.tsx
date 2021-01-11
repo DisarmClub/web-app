@@ -36,12 +36,6 @@ function App({Component, pageProps}: AppProps) {
   return (
     <ChakraProvider theme={customTheme}>
       <MotionStateProvider initialValue={true}>
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"
-          />
-        </Head>
         <GlobalStyle />
         <Background />
         <Component {...pageProps} />

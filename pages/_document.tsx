@@ -25,11 +25,11 @@ class AppDocument extends Document {
 
           <link rel="icon" href="/favicon.ico" sizes="32x32" />
 
-          <script
+          {/* <script
             data-ad-client="ca-pub-5673854016198249"
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          />
+          /> */}
           <title>Disarm Club - Disarm together</title>
         </Head>
         <body>

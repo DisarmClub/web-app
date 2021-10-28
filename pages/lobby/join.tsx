@@ -2,8 +2,8 @@ import React from 'react'
 import {
   Box,
   Button,
-  Flex,
   Heading,
+  VStack,
   Icon,
   Input,
   Link,
@@ -52,17 +52,18 @@ export default function JoinLobby() {
         Enter the 4-letter game code that your host has displayed on their
         screen.
       </Text>
-      <Flex marginTop="8" padding="8" justifyContent="space-around">
+      <VStack spacing={4}>
         <Input
+          textAlign="center"
           color="white"
           maxLength={4}
-          width="10rem"
+          width={56}
           placeholder="Game Code"
           textTransform="uppercase"
           _placeholder={{textTransform: 'initial'}}
         />
-        <Button width="10rem">Join Game</Button>
-      </Flex>
+        <Button width={56}>Join Game</Button>
+      </VStack>
     </PageLayout>
   )
 }

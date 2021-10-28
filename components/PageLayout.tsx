@@ -21,7 +21,8 @@ export function PageLayout({children}) {
         borderColor="white"
         justifyContent="space-between"
         borderWidth={sizes[1]}
-        padding="8"
+        padding={2}
+        pb={8}
       >
         {children}
       </Flex>

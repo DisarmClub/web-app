@@ -1811,10 +1811,10 @@
   dependencies:
     react-icons "*"
 
-"@types/react@^17.0.29":
-  version "17.0.29"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.29.tgz#9535f3fc01a4981ce9cadcf0daa2593c0c2f2251"
-  integrity sha512-HSenIfBEBZ70BLrrVhtEtHpqaP79waauPtA8XKlczTxL3hXrW/ElGNLTpD1TmqkykgGlOAK55+D3SmUHEirpFw==
+"@types/react@^18.0.6":
+  version "18.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.6.tgz#30206c3830af6ce8639b91ace5868bc2d3d1d96c"
+  integrity sha512-bPqwzJRzKtfI0mVYr5R+1o9BOE8UEXefwc1LwcBtfnaAn6OoqMhLa/91VA8aeWfDPJt1kHvYKI8RHcQybZLHHA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
